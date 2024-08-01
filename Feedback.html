@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback form</title>
+</head>
+<body>
+    <label for="Full Name">Full Name:</label>
+    <input type="text" name="full name" required><br/><br/>
+
+    <label for="email">email:</label>
+    <input type="email" name="email" required><br/><br/>
+
+    <label for="Comments">Comments:</label>
+    <input type="text" name="email" placeholder="Enter your feedback here"><br/><br/>
+
+    <label for="Range">Rating:</label>
+    <input type="range" name="rating" list="markers" min="0" max="10">
+    <datalist id="markers">
+        <option value="1" label="1"></option>
+        <option value="2" label="2"></option>
+        <option value="3" label="3"></option>
+        <option value="4" label="4"></option>
+        <option value="5" label="5"></option>
+        <option value="6" label="6"></option>
+        <option value="7" label="7"></option>
+        <option value="8" label="8"></option>
+        <option value="9" label="9"></option>
+        <option value="10" label="10"></option>
+    </datalist><br/><br/>
+
+    <label for="Feedback type">Feedback type:</label>
+    <input type="radio" id="Compliment" name="Feedback type" value="Compliment">
+    <label for="Compliment">Compliment</label><br/>
+    <input type="radio" id="Complaint" name="Feedback type" value="Complaint">
+    <label for="Complaint">Complaint</label><br/>
+    <input type="radio" id="Suggestion" name="Feedback type" value="Suggestion">
+    <label for="Suggestion">Suggestion</label><br/><br/>
+
+    <div class="form-section">
+        <label>
+            <input type="checkbox" name="agree" required>
+            I agree to the <a href="#feedback-policy">feedback policy</a>.
+        </label>
+    </div>
+
+    <div id="feedback-policy" class="feedback-policy">
+        <h2>Feedback Policy</h2>
+        <p>Your feedback is important to us. Please read our feedback policy carefully before submitting the form.</p>
+        <!-- Details of the feedback policy go here -->
+    </div>
+    
+    <label for="Submit"></label>
+    <button type="submit">Submit</button>
+    
+</body>
+</html>

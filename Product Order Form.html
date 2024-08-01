@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Order Form</title>
+</head>
+<body>
+    <label for="Full Name">Full Name:</label>
+    <input type="text" name="full name" required><br/><br/>
+
+    <label for="email">email:</label>
+    <input type="email" name="email" required><br/><br/>
+    
+    <label for="Category">Category:</label>
+    <select name="Category" id="Category">
+        <option value="">--Please choose an option--</option>
+        <hr/>
+        <optgroup label="Electronics">
+            <option value="Laptop">Laptop</option>
+            <option value="Smart phone">Smart Phone</option>
+            <option value="Tablet">Tablet</option>
+        </optgroup>
+        <hr/>
+        <optgroup label="Books">
+            <option value="Wings of fire">Wings of fire</option>
+            <option value="True FriendShip">True FriendShip</option>
+            <option value="The king of MotherLand">The king of MotherLand</option>
+        </optgroup>
+        <hr/>
+        <optgroup label="Clothing">
+            <option value="Tops">Tops</option>
+            <option value="Jeans">Jeans</option>
+            <option value="Crop top"></option>
+        </optgroup>   
+    </select><br/><br/>
+    
+    <label for="Quantity">Quantity:</label>
+    <input type="number" name="quantity" min="1" max="10" step="1"><br/><br/>
+
+    <label for="preferred delivery">preferred delivery:</label>
+    <input type="date" name="preferred delivery date"><br/><br/>
+
+    <label for="preferred delivery time">preferred delivery time:</label>
+    <input type="time" name="preferred delivery time"><br/><br/>
+
+    <label for="Text Area">Additional Information</label>
+    <input type="text" name="Additional Information" max="1000"><br/><br/>
+
+    <label for="Payment">Payment:</label>
+    <input type="checkbox" name="Credit Card">Credit Card<br/>
+    <input type="checkbox" name="Pay Pal">Pay Pal<br/>
+    <input type="checkbox" name="Bank Transfer">Bank Transfer<br/><br/>
+
+    <button type="Submit" name="submit" value="submit">Submit</button>
+
+</body>
+</html>
